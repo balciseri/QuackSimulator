@@ -1,5 +1,5 @@
 
-public class MallardQuack implements IQuackable {
+public class MallardDuck implements IQuackable {
 
 	@Override
 	public void Quack() {
