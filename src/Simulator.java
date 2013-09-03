@@ -13,7 +13,7 @@ public class Simulator {
 			
 
 			System.out.println("DUCK SIMULATOR");
-			
+			//egaga
 			Simulate(q1);
 			Simulate(q2);
 			Simulate(q3);
