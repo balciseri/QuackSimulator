@@ -2,11 +2,14 @@
 public class Simulator {
 		public static void main(String[] args) {
 			
-			IQuackable q1 = new QuackCounter( new MallardDuck() );		//pattern decorator
-			IQuackable q2 = new QuackCounter( new RedHeadDuck() );		//''
-			IQuackable q3 = new QuackCounter( new RubberDuck() );		//''
-			IQuackable q4 = new QuackCounter( new DuckCall() );			//''
-			IQuackable q5 = new GooseAdapter(new Goose());				//pattern adapter 
+			AbstractDuckFactory fact = new CountedDuckFactory();
+			
+			
+			IQuackable q1 = fact.CreateMallarDuck();		//pattern abstractfactory
+			IQuackable q2 = fact.CreateRedHeadDuck();		//''
+			IQuackable q3 = fact.CreateRubberDuck();		//''
+			IQuackable q4 = fact.CreateDuckCall();			//''
+			IQuackable q5 = new GooseAdapter(new Goose());	//pattern adapter 
 			
 			System.out.println("DUCK SIMULATOR");
 			
