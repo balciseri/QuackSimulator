@@ -11,6 +11,7 @@ public class Simulator {
 			IQuackable q4 = fact.CreateDuckCall();			//''
 			IQuackable q5 = new GooseAdapter(new Goose());	//pattern adapter 
 			
+//ega
 			System.out.println("DUCK SIMULATOR");
 			
 			Simulate(q1);
